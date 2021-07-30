@@ -1,0 +1,339 @@
+@media only screen and (min-width:1824px) {
+    .header-body-pictures {
+        width: 50%;
+        .illustration-hero {
+            position: relative;
+            margin-left: -70px;
+            width: 100%;
+        }
+    }
+    .tabs-picture {
+        width: 50%;
+        .curvy-blue-background-two {}
+        .tab-pic {
+            position: relative;
+            margin-left: 70px;
+            width: 70%;
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width:1023px) {
+    .header-nav {
+        width: 100%;
+    }
+    .header-body {
+        margin-top: 10%;
+        @include flexCenter;
+        .header-body-text {
+            width: 50%;
+            padding: 10%;
+            margin-top: 10%;
+            h1 {
+                font-size: 1.7rem;
+                padding: 0%;
+                color: $Very-Dark-Blue;
+            }
+            .header-paragraph {
+                color: $Grayish-Blue;
+                font-size: 1.2rem;
+                margin-top: 5%;
+            }
+            .header-button {
+                @include flexCenter;
+            }
+            .button-first,
+            .button-second {
+                padding: 5px 10px;
+            }
+        }
+    }
+    .header-body-pictures {
+        width: 50%;
+        margin-top: -10%;
+        .illustration-hero {
+            position: relative;
+            width: 100%;
+        }
+    }
+    .tabs-picture-text.active {
+        .curvy-blue-background-two {
+            padding: 15% 25%;
+        }
+        .tab-pic {
+            width: 100%;
+        }
+        .tabs-text {
+            h2 {
+                font-size: 1.6rem;
+                margin-top: 1%;
+            }
+        }
+    }
+    .browsers {
+        width: 43%;
+        margin-left: -57px;
+        .chrome {
+            padding: 44px 0px;
+        }
+        .firefox {
+            margin-top: 45%;
+            padding: 44px 0px;
+        }
+        .Opera {
+            margin-top: 102%;
+            padding: 44px 0px;
+        }
+    }
+    .validation-btn {
+        margin-left: 20px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+    .header-nav {
+        width: 100%;
+    }
+    .menu-btn {
+        display: flex;
+        margin-left: 20%;
+    }
+    .menu-nav {
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        top: 90%;
+        right: 0%;
+        left: 30%;
+        width: 100%;
+        height: 120vh;
+        z-index: 1000px;
+        transform: translateX(100vw);
+        background: linear-gradient(to bottom, rgba(50, 61, 108, 0.5), rgba(50, 61, 108, 0.8));
+        transition: transform 0.3s ease-in-out;
+    }
+    .menu-nav.open {
+        transform: translateX(0);
+        left: 0%;
+        padding: 60%;
+        margin-left: -10%;
+    }
+    .menu-nav li {
+        padding-top: 5px;
+    }
+    .menu-nav li a {
+        color: white;
+        padding: -20%;
+    }
+    .header-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        .header-body-text {
+            width: 100%;
+            margin-top: 44%;
+            margin-left: 17%;
+            padding: 0;
+            text-align: center;
+            h1 {
+                margin-top: -30%;
+                font-size: 2.4rem;
+                color: $Very-Dark-Blue;
+            }
+        }
+        .header-body-pictures {
+            .curvy-blue-background {
+                background-color: #5368df;
+                padding: 28% 37%;
+                margin-left: 44.45%;
+                margin-top: 43%;
+            }
+            .illustration-hero {
+                position: relative;
+                width: 100%;
+                margin-left: 10%;
+                margin-top: 25%;
+            }
+        }
+    }
+    .features {
+        width: 100%;
+    }
+    .features-top {
+        margin-top: 35%;
+        margin-left: 8%;
+        width: 100%;
+        h2 {
+            font-size: 1.5rem;
+            color: $Very-Dark-Blue;
+        }
+        .features-text {
+            padding: 6% 0%;
+            text-align: center;
+        }
+    }
+    .red-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 7%;
+        .red-heads {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    }
+    .tabs-picture-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        display: none;
+        .tabs-picture {
+            width: 100%;
+            .curvy-blue-background-two {
+                padding: 35% 52%;
+                margin-left: 0;
+                margin-top: 5%;
+            }
+            .tab-pic {
+                position: relative;
+                margin-left: 70px;
+                width: 100%;
+            }
+        }
+        .tabs-text {
+            margin-top: 60%;
+            margin-left: 15%;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            h2 {
+                font-size: 1.5rem;
+                color: $Very-Dark-Blue;
+            }
+            .tabs-paragraph {
+                text-align: center;
+            }
+            .tabs-button {
+                display: none;
+            }
+        }
+    }
+    .tabs-picture-text.active {
+        display: flex;
+        animation: fade 1s ease;
+    }
+    .download-extension-top {
+        margin-top: 26%;
+        width: 100%;
+        margin-left: 9%;
+        h2 {
+            font-size: 1.5rem;
+            color: #252b46;
+            width: 100%;
+            text-align: center;
+        }
+        .download-extension-text {
+            padding: 2% 0%;
+            text-align: center;
+            color: #9194a1;
+            font-family: 'Rubik', sans-serif;
+            margin-top: 10px;
+        }
+    }
+    .browsers {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-left: 17%;
+        margin-top: 10%;
+        .chrome {
+            padding: 10% 3%;
+        }
+        .firefox {
+            margin-top: 10%;
+            padding: 10% 3%;
+        }
+        .Opera {
+            margin-top: 20%;
+            padding: 10% 3%;
+        }
+    }
+    .faq-top {
+        margin-top: 25%;
+        width: 100%;
+        margin-left: 10%;
+        h2 {
+            font-size: 1.5rem;
+            color: #252b46;
+            width: 100%;
+            text-align: center;
+        }
+        .faq-text {
+            text-align: center;
+            padding: 2% 0%;
+            width: 100%;
+        }
+    }
+    .accordian-container {
+        width: 100%;
+        padding: 0;
+        margin-top: 11%;
+        margin-left: 5%;
+    }
+    .email-validation {
+        width: 125%;
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .validation-header {
+        margin-bottom: 14%;
+        font-size: 20px;
+        margin-top: 8%;
+    }
+    .validation-paragraph {
+        margin-bottom: 5%;
+        margin: 22px -44%;
+        font-size: 25px;
+    }
+    .email-validation {
+        .form {
+            @include flexCenter;
+            .form-control {}
+            .form-control input {
+                border-radius: 4px;
+                padding: 20px 80px;
+                margin-top: -14px;
+            }
+            .validation-btn {
+                padding: 18px 100px;
+            }
+        }
+    }
+    footer {
+        width: 125%;
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+    }
+    .footer-logo {
+        margin-top: 10%;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        li {
+            padding: 10px;
+        }
+    }
+}

@@ -1,0 +1,381 @@
+.features-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    h2 {
+        font-size: 2.0rem;
+        color: $Very-Dark-Blue;
+    }
+    .features-text {
+        padding: 2% 30%;
+        text-align: center;
+        color: $Grayish-Blue;
+    }
+}
+
+.red-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20%;
+    .red-heads {
+        font-size: 1.0rem;
+        position: relative;
+        cursor: pointer;
+    }
+    .red-heads::after {
+        content: "";
+        position: absolute;
+        bottom: -20%;
+        left: -1%;
+        width: 0%;
+        height: 5px;
+        background: $Soft-Red;
+        border-radius: 30px;
+        transition: width .8s ease;
+    }
+    .red-heads.active::after {
+        width: 100%;
+    }
+}
+
+.tabs-picture-text {
+    margin-top: 5%;
+    @include flexCenter;
+    display: none;
+    .tabs-picture {
+        width: 50%;
+        .curvy-blue-background-two {
+            position: absolute;
+            background-color: $Soft-Blue;
+            padding: 12% 21%;
+            margin-left: 0;
+            margin-top: 5%;
+            border-radius: 0 0 50% 0;
+        }
+        .tab-pic {
+            position: relative;
+            margin-left: 70px;
+        }
+    }
+    .tabs-text {
+        width: 50%;
+        padding: 10%;
+        h2 {
+            margin-top: -30%;
+            font-size: 2.0rem;
+            color: $Very-Dark-Blue;
+        }
+        .tabs-paragraph {
+            color: $Grayish-Blue;
+            font-size: 1.2rem;
+            margin-top: 5%;
+        }
+        .tabs-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: $Soft-Blue;
+            border: none;
+            font-family: 'Rubik', sans-serif;
+            margin-left: 50px;
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: 400;
+                font-size: 15px;
+            }
+            &:hover {
+                background-color: white;
+                border: 1px solid $Soft-Blue;
+                color: $Soft-Blue;
+                a {
+                    color: $Soft-Blue;
+                }
+            }
+        }
+    }
+}
+
+.tabs-picture-text.active {
+    display: flex;
+    animation: fade 1s ease;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+// DOWNLOAD THE SECTION 
+.download-extension-top {
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    h2 {
+        font-size: 2.0rem;
+        color: $Very-Dark-Blue;
+    }
+    .download-extension-text {
+        padding: 2% 30%;
+        text-align: center;
+        color: $Grayish-Blue;
+        font-family: 'Rubik', sans-serif;
+    }
+}
+
+.browsers {
+    @include flexCenter;
+    padding: 10px 10%;
+    .browser-pic {
+        margin-left: 85px;
+        margin-bottom: 70px;
+    }
+    .browsers-paragraph {
+        color: $Grayish-Blue;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    h6 {
+        text-align: center;
+        font-size: 1.0rem;
+        color: $Very-Dark-Blue;
+    }
+    .browser-btn {
+        margin-top: 30px;
+        padding: 10px 20px;
+        background-color: $Soft-Blue;
+        border: none;
+        font-family: 'Rubik', sans-serif;
+        margin-left: 50px;
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            font-size: 15px;
+        }
+        &:hover {
+            background-color: white;
+            border: 1px solid $Soft-Blue;
+            color: $Soft-Blue;
+            a {
+                color: $Soft-Blue;
+            }
+        }
+    }
+    .chrome {
+        padding: 3% 3%;
+        background-color: white;
+        box-shadow: 2px 4px 8px rgb(139, 139, 139);
+        border-radius: 20px;
+    }
+    .firefox {
+        margin-top: 10%;
+        padding: 3% 3%;
+        background-color: white;
+        box-shadow: 2px 4px 8px rgb(139, 139, 139);
+        margin-left: 5%;
+        border-radius: 20px;
+    }
+    .Opera {
+        margin-top: 20%;
+        padding: 3% 3%;
+        background-color: white;
+        box-shadow: 2px 4px 8px rgb(139, 139, 139);
+        margin-left: 5%;
+        border-radius: 20px;
+    }
+}
+
+// FAQ section
+.faq-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    h2 {
+        font-size: 2.0rem;
+        color: $Very-Dark-Blue;
+    }
+    .faq-text {
+        padding: 2% 30%;
+        text-align: center;
+        color: $Grayish-Blue;
+    }
+}
+
+.accordian-container {
+    padding: 25px 25%;
+    .faq-accordian {
+        h4 {
+            color: $Very-Dark-Blue;
+            margin-left: 15%;
+            &:hover {
+                color: hsl(14, 88%, 65%);
+            }
+        }
+        .question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            .active,
+            &:hover {
+                color: hsl(14, 88%, 65%);
+            }
+        }
+        .answer {
+            display: none;
+            p {
+                color: $Very-Dark-Blue;
+                font-size: 1.0rem;
+                padding: 5px 15%;
+            }
+        }
+        .line-bottom {
+            width: 85%;
+            height: 2px;
+            background-color: hsl(240, 5%, 91%);
+            margin: 10px 15%;
+        }
+    }
+}
+
+.faq-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: $Soft-Blue;
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 50%;
+    cursor: pointer;
+    p {
+        color: white;
+    }
+    &:hover {
+        background-color: white;
+        border: 1px solid $Soft-Blue;
+        color: $Soft-Blue;
+        p {
+            color: $Soft-Blue;
+        }
+    }
+}
+
+.email-validation {
+    background-color: $Soft-Blue;
+    margin-top: 10%;
+    padding: 5% 35%;
+    .form {
+        @include flexCenter;
+        .form-control {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 26px;
+        }
+        .form-control input {
+            border-radius: 4px;
+            border: 2px solid gainsboro;
+            padding: 10px 40px;
+            margin-top: -14px;
+        }
+        .form-control.success input {
+            border-color: green;
+        }
+        .form-control.error input {
+            border-color: red;
+        }
+        .form-control small {
+            visibility: hidden;
+            border: 1px solid red;
+            background-color: $Soft-Red;
+            color: white;
+            padding: 5px;
+        }
+        .form-control.error small {
+            border: 1px solid red;
+            background-color: $Soft-Red;
+            color: white;
+            padding: 5px;
+            visibility: visible;
+        }
+        .validation-btn {
+            padding: 10px 35px;
+            background-color: #fa5757;
+            color: white;
+            margin-bottom: 27px;
+            border: none;
+            cursor: pointer;
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: 400;
+                font-size: 15px;
+            }
+            &:hover {
+                background-color: white;
+                border: 1px solid $Soft-Blue;
+                color: $Soft-Red;
+                a {
+                    color: $Soft-Red;
+                }
+            }
+        }
+    }
+}
+
+.validation-header {
+    color: white;
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 13px;
+}
+
+.validation-paragraph {
+    color: white;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+// FOOTER
+footer {
+    background-color: $Very-Dark-Blue;
+    @include flexCenter;
+    height: 20vh;
+    padding: 0 10%;
+}
+
+.footer-nav {
+    @include flexCenter;
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+            &:hover {
+                color: $Soft-Red;
+            }
+        }
+    }
+}
+
+.social-icons {
+    @include flexCenter;
+    li {
+        list-style: none;
+        img {
+            padding: 20px;
+        }
+    }
+}
